@@ -29,6 +29,7 @@ def search(keyword)
 end
 
 keyword = ARGV.join(' ').toutf8
+puts keyword
 
 search(keyword).each_with_index do |video, i|
   puts "\n" + '-'*50
